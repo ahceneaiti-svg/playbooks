@@ -1,0 +1,7 @@
+---
+- name: Print magic variables
+  hosts: all
+  tasks:
+    - name: Print message
+      ansible.builtin.debug:
+        msg: "{{ ansible_version }}"
