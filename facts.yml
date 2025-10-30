@@ -5,4 +5,4 @@
   tasks:
     - name: Print all facts
       ansible.builtin.debug:
-        msg: "Device: {{ ansible_facts['product_name'] }}"
+        msg: "Device: {{ ansible_facts['os_family'] }}"
